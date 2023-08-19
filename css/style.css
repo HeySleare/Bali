@@ -17,8 +17,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
 *{
-	/*
-	border: 1px red dotted;*/
+	/*border: 1px red dotted;*/
 	font-family: 'IBM Plex Sans', sans-serif;
 }
 body{
@@ -26,10 +25,7 @@ body{
 	color: #FFF;
 	
 }
-.header{
-}
 .content {
-	
 	height: 100%;
 	width: 1140px;
     margin-left: auto;
@@ -62,28 +58,28 @@ body{
 	color: #FFF;
 	text-decoration: underline; 
 }
-.buy-button__header { 
+.green-button { 
+	color: #1DC565;
 	width: 133px;
 	height: 40px;
 	text-align: center;
 	display: flex;
   	align-items: center;
   	justify-content: center;
-	background-color: #388b5b;
-	color: #FFF;
+	background-color: #256b43;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;	
 	margin: 5px;
 }
-.buy-button__header:hover{
-	background-color: #2f6e4a;
+.green-button:hover{
+	
+	background-color: #205c3a;
+	color: #FFF;
 }
 .text-block {
 	margin: 65px 0;
-}
-.text-container{
 }
 .bigger-text__text-block { 
 	display: inline;
@@ -98,7 +94,6 @@ body{
 	min-width: 100%;
 }
 .bigger-text__text-block span:last-child{ 
-	
 	display: flex;
   	align-items: center;
   	justify-content: center;
@@ -118,7 +113,6 @@ body{
 .image-box { 
 	height: 380px;
 	margin-top: 130px;
-	
 }
 .img-container__image-box { 
 	position: relative;
@@ -131,16 +125,15 @@ body{
 .video-container__image-box {
 	position: absolute;
 	top: -70px;
-	right: 10px;
+	right: 0px;
 	background: rgba(0, 0, 0, 0.49);
 	display: flex;
 	width: 430px;
 	height: 125px;
  }
  .text-box__video-container {
-
 	margin: 20px 35px 26px 40px;
-	width: 70%;
+	width: 65%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -158,7 +151,100 @@ body{
 	font-weight: 400;
 	line-height: normal;
   }
- .preview__video-container{
-	background: url("/img/bali-pagoda-indonesia-1.png") cover;
-	width: 30%;
+ .video-box__video-container{
+	background: url("/img/bali-pagoda-indonesia-1.png");
+	width: 35%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
  }
+ .video-box__video-container a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45px;
+	height: 45px;
+	border-radius: 50px;
+	background-color: rgba(217, 217, 217, 0.68);
+ }.video-box__video-container a:hover{
+	background-color: rgba(165, 158, 158, 0.68);
+ }
+ .sponsors__container{
+	display: flex;
+	justify-content:space-around;
+	height: 75px;
+	margin-top: 120px;
+ }
+ .sponsors__container img{
+	max-width: 100%;
+ }
+.attraction { 
+	margin-top: 120px;
+}
+.header__attraction { 
+	margin: 30px 0 45px 0;
+	display: flex;
+}
+.header__attraction p:first-child{
+	margin-right: 15px;
+	color: #FFF;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	width: 50%;
+}
+.header__attraction p:last-child{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	margin-left: 15px;
+	color: #BABABA;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.information__attraction {
+	display: flex;
+	justify-content:space-between;
+ }
+ .bar {
+	display: flex;
+	width: 23%;
+ }
+ .bar img{
+	max-width: 100%;
+ }
+ .bar:nth-child(even){
+	flex-direction: column-reverse;
+ }
+ .bar:nth-child(even) img{
+	margin-top: 25px;
+ }
+ .bar:nth-child(odd){
+	flex-direction: column;
+ }
+ .bar:nth-child(odd) img{
+	margin-bottom: 25px;
+ }
+.text-container__bar { 
+
+}
+.text-container__bar p:first-child{
+	color: #FFF;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+.text-container__bar p:last-child{
+	color: #BABABA;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
