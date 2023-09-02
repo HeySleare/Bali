@@ -17,7 +17,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
 *{
-	/*border: 1px red dotted;*/
+	/*
+	border: 1px red dotted;*/
 	font-family: 'IBM Plex Sans', sans-serif;
 }
 img{
@@ -26,7 +27,7 @@ img{
 body{
 	background: #0F1016;
 	color: #FFF;
-	
+	width: 100%;
 }
 .content {
 	height: 100%;
@@ -252,9 +253,10 @@ body{
 }
 
 .galerry {
+	background-color: #1E1D1E;
 	margin-top: 120px;
-	background: #1E1D1E;
 	padding: 120px 0;
+	width: 100%;
  }
 .header__gallery { 
 	font-size: 35px;
@@ -304,7 +306,6 @@ body{
 }*/
 .text-container__radio{
 	width: 439px;
-	
 }
 .radio-container__text-box p:nth-child(1){
 	color: #FFF;
@@ -320,7 +321,6 @@ body{
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-
 }	
 input[type="radio"]{
 	display: none;
@@ -328,7 +328,6 @@ input[type="radio"]{
 input[type="radio"]:checked + label{
 	background: #1F2D25;
 	border: none;
-
 }
 input[type="radio"]:checked + label::before{
 	border: 1px solid #fff;
