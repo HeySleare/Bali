@@ -463,5 +463,27 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 		font-size: 30px;
 	}
 	
+	.img-container__image-box{
+		display: block;
+	}
+	.sponsors__container{
+		flex-wrap: wrap;
+	}
+	.information__attraction{
+		flex-wrap: wrap;
+	}
+	.bar{
+		width: 100%;
+	}
+	.bar :nth-child(){
+		flex-direction: column;
+	}
+	.check-box-container{
+		flex-direction: column;
+	}
+	.radio-container__check-box{
+		width: 100%;
+		overflow: hidden;
+	}
 }
  /*------------------------------------------------------------------- */
