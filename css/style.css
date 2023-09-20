@@ -451,9 +451,10 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 	border-color: #fff;
   }
  .revievs-container {
-	width: 100vw;
-	overflow: visible;
 	display: flex;
+	position: relative;
+	left: 0;
+	transition: all ease 1s;
   }
  .reviev-block {
 	margin: 60px 15px 0 0;
