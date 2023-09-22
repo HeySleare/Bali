@@ -572,6 +572,7 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 	.content{
 		width: 80%;
 	}
+
 }
 @media (max-width: 576px){
 	.content{
@@ -583,7 +584,9 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 		z-index: 3;
 		background-color: #0F1016;
 	}
-	
+	h2{
+		width: 100%;
+	}
 	.header__burger{
 		display: block;
 		position: relative; 
@@ -653,6 +656,48 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 	.radio-container__check-box{
 		width: 100%;
 		overflow: hidden;
+	}
+	.bigger-text__text-block br{
+		display: none;
+	}
+	.bigger-text__text-block:nth-child(1), :nth-child(2){
+		font-size: 32px;
+		display: inline;
+	}
+	.bigger-text__text-block span:nth-child(4){
+		font-size: 15px;
+		margin-top: 20px;
+		margin-left: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.video-container__image-box{
+		width: 95%;
+		left: auto;
+		right: auto;
+		
+	}
+	.text-box__video-container{
+		
+		margin: 0;
+		padding: 15px 26px;
+		font-size: 17px;
+	}
+	.video-box__video-container{
+		background-position: 0%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.image-box{
+		height: 70vh;
+	}
+	.img-container__image-box{
+		
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
  /*------------------------------------------------------------------- */
