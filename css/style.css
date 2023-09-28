@@ -18,6 +18,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 *{
 	/*border: 1px red dotted;*/
+	
 	font-family: 'IBM Plex Sans', sans-serif;
 }
 img{
@@ -73,8 +74,7 @@ h2{
 	
 	transition: all 0.3s ease 0s;
 }.header__burger::before{
-	
-	top:0;
+	top:11%;
 }
 .header__burger span{
 	position: absolute;
@@ -83,11 +83,11 @@ h2{
 	left: 0;
 	width: 100%;
 	height: 2px;
-	top: 9px;
+	top: 46%;
 	transition: all 0.3s ease 0s;
 }
 .header__burger::after{
-	bottom: 0;
+	bottom: 11%;
 }
 .buttons-container__header { 
 	display: flex;
@@ -230,26 +230,24 @@ h2{
 	margin: 30px 0 45px 0;
 	display: flex;
 }
+.header__attraction p{
+	width: 50%;
+	font-style: normal;
+	line-height: normal;
+}
 .header__attraction p:first-child{
 	margin-right: 15px;
 	color: #FFF;
 	font-size: 35px;
-	font-style: normal;
 	font-weight: 600;
-	line-height: normal;
-	width: 50%;
 }
 .header__attraction p:last-child{
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	width: 50%;
 	margin-left: 15px;
 	color: #BABABA;
 	font-size: 15px;
-	font-style: normal;
 	font-weight: 400;
-	line-height: normal;
 }
 .information__attraction {
 	display: flex;
@@ -259,7 +257,7 @@ h2{
 	display: flex;
 	width: 23%;
  }
- .bar img{
+ .bar-img{
 	max-width: 100%;
  }
  .bar:nth-child(even){
@@ -359,6 +357,9 @@ h2{
 	position: relative;
 	width: 439px;
 }
+.checkbox-mobile{
+	display: none;
+}
 .radio-container__text-box p:nth-child(1){
 	color: #FFF;
 	font-size: 16px;	
@@ -418,7 +419,6 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 	border-color: #292D32;
 	padding: 5px;
  }
- 
  .left-button::after{
 	transform: translateY(-50%) rotate(135deg);
 	left: 45%;
@@ -576,7 +576,7 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 }
 @media (max-width: 576px){
 	.content{
-		width: 80%;
+		width: 92%;
 	}
 	header{
 		position: sticky;
@@ -586,13 +586,24 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 	}
 	h2{
 		width: 100%;
+		font-size: 24px;
+	}
+	.text__header{
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.burger-container{
+		width: 40px;
+		height: 40px;
+		background-color:#205c3a;
 	}
 	.header__burger{
 		display: block;
 		position: relative; 
-		width: 30px;
-		height: 20px;
+		width: 22px;
+		height: 22px;
 		z-index: 3;
+		margin: 9px;
 	}
 	.header-menu{
 		position: fixed;
@@ -611,13 +622,13 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 	}
 	.header__burger.active::before{
 		transform:rotate(45deg);
-		top: 9px;
+		top: 10px;
 	}.header__burger.active span{
 		transform: scale(0);
 	}
 	.header__burger.active::after{
 		transform:rotate(-45deg);
-		bottom: 9px;
+		bottom: 10px;
 	}
 	.buttons-container__header{
 		display: flex;
@@ -660,7 +671,7 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 	.bigger-text__text-block br{
 		display: none;
 	}
-	.bigger-text__text-block:nth-child(1), :nth-child(2){
+	.bigger-text{
 		font-size: 32px;
 		display: inline;
 	}
@@ -675,7 +686,7 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 		width: 95%;
 		left: auto;
 		right: auto;
-		
+		height: fit-content;
 	}
 	.text-box__video-container{
 		
@@ -693,11 +704,179 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 		height: 70vh;
 	}
 	.img-container__image-box{
-		
+		background-position: 50% 45%;
 		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		background-size: 425%;
+	}
+	.sponsors{
+		margin-top: 30px;
+	}
+	.sponsors__container{
+		margin-top: 0;
+		height: fit-content;
+	}
+	.sponsors__container img{
+		max-width: 40%;
+		margin-bottom: 20px;
+	 }
+	 .greeny-button{
+		display: none;
+	 }
+	 .attraction{
+		margin-top: 100px;
+	 }
+	 .green-button{
+		width: 110px;
+		height: 40px;
+		font-size: 20px;
+	 }
+	 .header__attraction{
+		flex-direction: column;
+	 }
+	 .header__attraction p{
+		width: 100%;
+	 }
+	 .header__attraction p:nth-child(1){	
+		margin-top: 40px;
+		font-size: 24px;
+	 }
+	 .header__attraction p:nth-child(2){
+		margin: 0;
+		margin-top: 33px;
+	 }
+	 .information__attraction{
+		margin-top: 40px;
+	 }
+	 .bar:nth-child(even){
+		flex-direction: column;
+	 }
+	 .bar{
+		margin-top: 25px;
+	 }.bar-img img{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	 }
+	 .bar-img{
+		height: 330px;
+		overflow: hidden;
+	 }
+	 .bar:nth-child(odd) img {
+		margin-bottom: 0px;
+	}
+	 .text-container__bar p:first-child{
+		margin-top:20px;
+		font-size: 16px;
+		font-weight: 600;
+	 }
+	 .text-container__bar p:last-child{
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 18px;
+	}
+	.galerry{
+		margin-top: 100px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.header__gallery{
+		width: 100%;
+	}
+	.check-box-container{
+		display: none;
+	}
+	.checkbox-mobile{
+		display: block;
+	}
+	.image-window__checkbox__mobile {
+		max-width: 100%;
+		overflow: hidden;
+	 }
+	.image-caruseel__checkbox-mobile {
+		display: flex;
+	 }
+	.text-caruseel-container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		margin-top: 40px;
+		background-color: #1F2D25;;
+		height: 80px;
+		border-radius: 19px;
+	 }
+	 .galerry-button{
+		position: relative;
+		width: 30px;
+		height: 30px;
+		background-color: #FFF;
+		border-radius: 50%;
+		cursor: pointer;
+
+	 }
+	.left-button__checkbox { }
+	.right-button__checkbox { }
+	.text-window__checkbox {
+		width: 70%;
+		overflow: hidden;
+	 }
+	.text-caruseel {
+		display: flex;
+	 }
+	 .text-caruseel p:nth-child(1){
+		color: #FFF;
+		font-size: 12px;	
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 7px;
+	 }
+	 .text-caruseel p:nth-child(2){
+		color: #BABABA;
+		text-align: center;
+		font-size: 12px;
+		font-weight: 400;	
+		line-height: normal;
+	 }
+	.day__text-caruseel {
+		min-width: 100%; 
+	}
+	.reviev{
+		margin: 0;
+		margin-top: 100px;;
+	}
+	.wrapper__reviev{
+		flex-wrap: wrap;
+	}
+	.reviev h2{
+		margin-top: 40px;
+		width: 100%;
+	}
+	.button-container__reviev{
+		display: none;
+	}
+	.reviev-block{
+		max-width: 100%;
+		height: 310px;
+	}
+	.text__reviev-block{
+		max-width: 100%;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	.faq{
+		margin-top: 100px;
+		height: fit-content;
+	}
+	.faq-wrapper{
+		flex-wrap: wrap;
+	}
+	.image-side__faq{
+		height: 414px;
 	}
 }
  /*------------------------------------------------------------------- */
