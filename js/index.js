@@ -54,3 +54,30 @@ document.querySelector('.left-button').addEventListener('click', function(){
     console.log(offset);
 });
 
+
+//МОБІЛЬНА ВЕРСІЯ КАРУСЕЛІ ТАЙМЛАЙНУ
+let mobileGalerryOffset = 0;
+const mobileGalleryContainer = document.querySelector('.image-caruseel__checkbox-mobile');
+const mobileTextContainer = document.querySelector('.text-caruseel');
+document.querySelector('.right-button__checkbox').addEventListener('click', function(){
+    mobileGalerryOffset += 100;
+    console.log("right");
+        if(mobileGalerryOffset >= 200){
+            mobileGalerryOffset=200;
+        }
+        
+        console.log(mobileGalerryOffset);
+        mobileTextContainer.style.left = -mobileGalerryOffset +`%`;
+        mobileGalleryContainer.style.left = -mobileGalerryOffset +`%`;
+});
+document.querySelector('.left-button__checkbox').addEventListener('click', function(){
+    mobileGalerryOffset -= 100;
+    console.log("right");
+        if(mobileGalerryOffset <= 0){
+            mobileGalerryOffset=0;
+            document.querySelector('.left-button__checkbox').disabled;
+        }
+        console.log(mobileGalerryOffset);
+        mobileTextContainer.style.left = -mobileGalerryOffset +`%`;
+        mobileGalleryContainer.style.left = -mobileGalerryOffset +`%`;
+});

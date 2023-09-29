@@ -385,7 +385,6 @@ input[type="radio"]:checked + label{
 input[type="radio"]:checked + label div:nth-child(1)::after {
 	transform: scale(1);
  }
- 
  .reviev { 
 	margin: 120px;
  }
@@ -476,7 +475,6 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 	width: 65px;
 	height: 65px;
  }
- .avatar { }
  .name {
 	margin-left: 20px;
 	font-size: 20px;
@@ -509,7 +507,6 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 	width: 555px;
 	background-color: #4A4A4A;
   }
- .dropdown-child__faq { }
  .dropdown-opener{ 
 	margin-top: 50px;
 	margin-bottom: 10px;
@@ -796,7 +793,10 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 		overflow: hidden;
 	 }
 	.image-caruseel__checkbox-mobile {
+		position: relative;
 		display: flex;
+		left: 0;
+		transition: all ease 1s;
 	 }
 	.text-caruseel-container {
 		display: flex;
@@ -817,14 +817,20 @@ input[type="radio"]:checked + label div:nth-child(1)::after {
 		cursor: pointer;
 
 	 }
-	.left-button__checkbox { }
-	.right-button__checkbox { }
 	.text-window__checkbox {
 		width: 70%;
 		overflow: hidden;
 	 }
+	 :disabled{
+		background-color: dimgrey;
+		color: linen;
+		opacity: 1;
+	 }
 	.text-caruseel {
 		display: flex;
+		position: relative;
+		left: 0;
+		transition: all ease 1s;
 	 }
 	 .text-caruseel p:nth-child(1){
 		color: #FFF;
