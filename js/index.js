@@ -37,9 +37,9 @@ document.querySelector('.right-button').addEventListener('click', function(){
         offset += 555;
         if(offset >= 1110){
             offset=1110;
-            document.querySelector('.right-button').style.background = `#434347`;
+            $('.right-button').addClass('reviev-button-active');
         }
-        document.querySelector('.left-button').style.background = `#fff`;
+        $('.left-button').removeClass('reviev-button-active');
         revievsContainer.style.left = -offset +`px`;
         console.log(offset);
 });
@@ -47,10 +47,10 @@ document.querySelector('.left-button').addEventListener('click', function(){
     offset -= 555;
     if(offset <= 0){
         offset=0;
-        document.querySelector('.left-button').style.background = `#434347`;
-    }
-    document.querySelector('.right-button').style.background = `#fff`;
-    revievsContainer.style.left = -offset +`px`;
+        $('.left-button').addClass('reviev-button-active');
+     }
+     $('.right-button').removeClass('reviev-button-active');
+     revievsContainer.style.left = -offset +`px`;
     console.log(offset);
 });
 
@@ -61,23 +61,21 @@ const mobileGalleryContainer = document.querySelector('.image-caruseel__checkbox
 const mobileTextContainer = document.querySelector('.text-caruseel');
 document.querySelector('.right-button__checkbox').addEventListener('click', function(){
     mobileGalerryOffset += 100;
-    console.log("right");
         if(mobileGalerryOffset >= 200){
             mobileGalerryOffset=200;
+            $('.right-button__checkbox').addClass('galerry-button-active');
         }
-        
-        console.log(mobileGalerryOffset);
+        $('.left-button__checkbox').removeClass('galerry-button-active');
         mobileTextContainer.style.left = -mobileGalerryOffset +`%`;
         mobileGalleryContainer.style.left = -mobileGalerryOffset +`%`;
 });
 document.querySelector('.left-button__checkbox').addEventListener('click', function(){
     mobileGalerryOffset -= 100;
-    console.log("right");
         if(mobileGalerryOffset <= 0){
             mobileGalerryOffset=0;
-            document.querySelector('.left-button__checkbox').disabled;
+            $('.left-button__checkbox').addClass('galerry-button-active');
         }
-        console.log(mobileGalerryOffset);
+        $('.right-button__checkbox').removeClass('galerry-button-active');
         mobileTextContainer.style.left = -mobileGalerryOffset +`%`;
         mobileGalleryContainer.style.left = -mobileGalerryOffset +`%`;
 });
